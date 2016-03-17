@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use('/api', api());
 
 app.server = http.createServer(app);
-app.server.listen(process.env.PORT || 8080);
+app.server.listen(process.env.PORT || 1234);
 
 console.log(`Started on port ${app.server.address().port}.`);
 
